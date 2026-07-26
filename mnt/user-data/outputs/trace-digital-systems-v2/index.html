@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trace Digital Systems — Every dollar, accounted for</title>
+<meta name="description" content="Trace Digital Systems organizes your business finances over WhatsApp — in English, Español, 中文, or Tiếng Việt — so you always know where you stand.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Public+Sans:wght@400;500;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="paper-grain"></div>
+
+<!-- SVG filter powering the ink-stamp rough edge, used across the page -->
+<svg width="0" height="0" style="position:absolute">
+  <filter id="roughen" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="7" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="4"/>
+  </filter>
+</svg>
+
+<div class="ledger-rail" aria-hidden="true">
+  <span class="rail-num">TRACE DIGITAL SYSTEMS · LEDGER · VOL. 01</span>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">TRACE <span class="sub">Digital Systems</span></a>
+    <nav class="lang-switch" aria-label="Language">
+      <button class="lang-btn is-active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="zh">中文</button>
+      <button class="lang-btn" data-lang="vi">VI</button>
+    </nav>
+    <a href="#book" class="stamp-btn stamp-btn--ghost" style="padding:9px 18px;font-size:12.5px;" data-i18n="nav.cta">Book an assessment</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ ENTRY 001 — HERO ============ -->
+  <section class="entry" id="entry-hero">
+    <div class="wrap hero-inner">
+      <div class="hero-headline-block ruled">
+        <p class="entry-label"><span class="no">ENTRY NO. 001</span> <span data-i18n="hero.eyebrow">Financial clarity for businesses that speak more than English</span></p>
+        <h1 class="entry-title">
+          <span data-i18n="hero.title1">Every dollar,</span>
+          <span data-i18n="hero.title2">accounted for.</span>
+          <span data-i18n="hero.title3">In your language.</span>
+        </h1>
+        <p class="hero-lead" data-i18n="hero.sub">Send us a photo of a receipt over WhatsApp. We organize your books and catch what's leaking — every month, in English, Español, 中文, or Tiếng Việt.</p>
+        <div class="hero-actions">
+          <a href="#book" class="stamp-btn" data-i18n="hero.cta1">Book a free assessment</a>
+          <a href="#how" class="text-link" data-i18n="hero.cta2">See how it works ↓</a>
+        </div>
+        <div class="hero-langs" aria-hidden="true">
+          <span>Escríbenos</span><span class="sep">/</span><span>请联系我们</span><span class="sep">/</span><span>Nhắn tin cho chúng tôi</span>
+        </div>
+      </div>
+
+      <div class="voucher" aria-hidden="true">
+        <div class="voucher-head"><span>WhatsApp – Trace</span><span>Today, 9:14a</span></div>
+        <div class="voucher-row"><span class="k">IMG</span><span class="v">receipt_0714.jpg</span></div>
+        <div class="voucher-row"><span class="k">VENDOR</span><span class="v">Restaurant Depot</span></div>
+        <div class="voucher-row"><span class="k">AMOUNT</span><span class="v">$612.40</span></div>
+        <div class="voucher-row"><span class="k">CATEGORY</span><span class="v">Ingredients</span></div>
+        <div class="voucher-row" style="border-bottom:none;"><span class="k">STATUS</span><span class="v">Confirmed ✓</span></div>
+        <div class="voucher-stamp"><span>RECONCILED</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENTRY 002 — STATS ============ -->
+  <section class="entry entry--deep">
+    <div class="wrap">
+      <p class="entry-label"><span class="no">ENTRY NO. 002</span> <span data-i18n="stats.eyebrow">Why this exists</span></p>
+      <h2 class="entry-title" style="margin-bottom:0;" data-i18n="stats.title">Most owners don't lose money because the business is weak. They lose it because nobody's watching the details.</h2>
+    </div>
+  </section>
+
+  <!-- ============ ENTRY 003 — HOW IT WORKS ============ -->
+  <section class="entry entry--ink" id="how">
+    <div class="wrap">
+      <p class="entry-label"><span class="no">ENTRY NO. 003</span> <span data-i18n="how.eyebrow">How it works</span></p>
+      <h2 class="entry-title" data-i18n="how.title">No app. No dashboard. Just the phone you already use.</h2>
+
+      <div class="process">
+        <div class="process-row">
+          <span class="p-num">01</span>
+          <span class="p-title" data-i18n="how.step1.h">Text a photo</span>
+          <p class="p-body" data-i18n="how.step1.p">A receipt, a bank statement screenshot, or a voice note describing a sale — sent over WhatsApp, in whatever language is easiest.</p>
+        </div>
+        <div class="process-row">
+          <span class="p-num">02</span>
+          <span class="p-title" data-i18n="how.step2.h">We organize it</span>
+          <p class="p-body" data-i18n="how.step2.p">Every item is categorized and reconciled. Anything unclear gets a quick yes/no confirmation back to you — never a silent guess.</p>
+        </div>
+        <div class="process-row">
+          <span class="p-num">03</span>
+          <span class="p-title" data-i18n="how.step3.h">You get a monthly snapshot</span>
+          <p class="p-body" data-i18n="how.step3.p">A plain-language summary of money in, money out, and anything worth knowing — translated, so you always know exactly where you stand.</p>
+        </div>
+        <div class="process-row">
+          <span class="p-num">04</span>
+          <span class="p-title" data-i18n="how.step4.h">You're prepared for what's next</span>
+          <p class="p-body" data-i18n="how.step4.p">Month over month, your records build into a clear financial history — ready whenever you need it, for a lender, a CPA, or your own peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENTRY 004 — EVIDENCE ============ -->
+  <section class="entry entry--ink evidence-entry">
+    <div class="wrap">
+      <p class="entry-label"><span class="no">ENTRY NO. 004</span> <span data-i18n="ev.eyebrow">Worth knowing</span></p>
+      <h2 class="entry-title" data-i18n="ev.title">Clean records matter most exactly when you're not thinking about them.</h2>
+
+      <div class="evidence-grid">
+        <div>
+          <p style="font-family:var(--f-mono);font-size:12px;color:rgba(243,247,241,.55);margin-bottom:20px;" data-i18n="ev.chartcap">When small businesses applied for financing in 2024</p>
+          <div class="bar-row">
+            <span data-i18n="ev.bar1label">Got the full amount</span>
+            <div class="bar-track"><div class="bar-fill bar-good" style="--pct:41%"></div></div>
+            <span class="bar-pct">41%</span>
+          </div>
+          <div class="bar-row">
+            <span data-i18n="ev.bar2label">Got partial funding</span>
+            <div class="bar-track"><div class="bar-fill bar-mid" style="--pct:36%"></div></div>
+            <span class="bar-pct">36%</span>
+          </div>
+          <div class="bar-row">
+            <span data-i18n="ev.bar3label">Got nothing</span>
+            <div class="bar-track"><div class="bar-fill bar-bad" style="--pct:24%"></div></div>
+            <span class="bar-pct">24%</span>
+          </div>
+          <p class="chart-src" data-i18n="ev.source">Source: Federal Reserve, 2024 Small Business Credit Survey</p>
+        </div>
+        <div class="evidence-note">
+          <p data-i18n="ev.note1">When small businesses do apply for financing, lenders point to the same preventable culprit again and again: missing documents, numbers that don't match across statements, and applications that arrive incomplete. It's one of the most common — and most avoidable — reasons applications stall.</p>
+          <p data-i18n="ev.note2">None of that is about whether the business is good. It's about whether the paperwork looks like it was built by someone a bank can trust to repay them.</p>
+        </div>
+      </div>
+
+      <div class="split-ledger">
+        <div class="split-col split-col--bad">
+          <p class="split-head" data-i18n="ev.without.h">Without organized books</p>
+          <ul>
+            <li data-i18n="ev.without.li1">Receipts scattered across texts, drawers, and memory</li>
+            <li data-i18n="ev.without.li2">No clear answer when anyone asks "what did you actually make last quarter?"</li>
+            <li data-i18n="ev.without.li3">Problems discovered at tax time, months too late to fix</li>
+          </ul>
+        </div>
+        <div class="split-col split-col--good">
+          <p class="split-head" data-i18n="ev.with.h">With Trace</p>
+          <ul>
+            <li data-i18n="ev.with.li1">Every receipt logged the day it happens, over WhatsApp</li>
+            <li data-i18n="ev.with.li2">A monthly snapshot that shows exactly where your money went</li>
+            <li data-i18n="ev.with.li3">Issues flagged the month they happen — not months later, when it's too late to fix them</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENTRY 005 — VALUE TABLE ============ -->
+  <section class="entry">
+    <div class="wrap">
+      <p class="entry-label"><span class="no">ENTRY NO. 005</span> <span data-i18n="val.eyebrow">What you're actually paying for</span></p>
+      <h2 class="entry-title" data-i18n="val.title">Every option has a real cost. Most owners just never add it up.</h2>
+
+      <div class="dl-table-wrap">
+        <table class="dl-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th data-i18n="val.col1">Doing it yourself</th>
+              <th data-i18n="val.colSoftware">DIY accounting software</th>
+              <th data-i18n="val.col2">A traditional bookkeeper</th>
+              <th class="col-trace" data-i18n="val.col3">Trace</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th data-i18n="val.row1">Monthly cost</th>
+              <td data-i18n="val.r1c1">$0 cash — but see the time cost below</td>
+              <td data-i18n="val.r1cSoftware">$25–150/month</td>
+              <td data-i18n="val.r1c2">$350–800/month</td>
+              <td class="col-trace" data-i18n="val.r1c3">$150–300/month</td>
+            </tr>
+            <tr>
+              <th data-i18n="val.row2">Your time each month</th>
+              <td data-i18n="val.r2c1">6–10 hours, most nights and weekends</td>
+              <td data-i18n="val.r2cSoftware">4–6 hours, entering and categorizing</td>
+              <td data-i18n="val.r2c2">Low, but scheduling calls and back-and-forth</td>
+              <td class="col-trace" data-i18n="val.r2c3">10–15 minutes, confirming texts</td>
+            </tr>
+            <tr>
+              <th data-i18n="val.row3">Works in your language</th>
+              <td data-i18n="val.r3c1">Whatever language you keep your own notes in</td>
+              <td data-i18n="val.r3cSoftware">Almost always English-only</td>
+              <td data-i18n="val.r3c2">Rarely, outside big cities</td>
+              <td class="col-trace" data-i18n="val.r3c3">English, Español, 中文, Tiếng Việt</td>
+            </tr>
+            <tr>
+              <th data-i18n="val.row4">Catches errors automatically</th>
+              <td data-i18n="val.r4c1">Only what you happen to notice</td>
+              <td data-i18n="val.r4cSoftware">Basic bank matching — you still review it</td>
+              <td data-i18n="val.r4c2">Usually, once records reach them</td>
+              <td class="col-trace" data-i18n="val.r4c3">Yes — flagged the same month</td>
+            </tr>
+            <tr>
+              <th data-i18n="val.row5">Typical response time</th>
+              <td data-i18n="val.r5c1">Whenever you find the time</td>
+              <td data-i18n="val.r5cSoftware">N/A — self-serve, no one to ask</td>
+              <td data-i18n="val.r5c2">Days, around their schedule</td>
+              <td class="col-trace" data-i18n="val.r5c3">Same day, over WhatsApp</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="dl-source" data-i18n="val.source">General small-business bookkeeping typically runs $150–$2,500+/month depending on volume and needs; figures above reflect core categorization and reconciliation work comparable to what Trace provides.</p>
+
+      <div class="dl-callout">
+        <p data-i18n="val.callout">Here's the part that usually gets skipped: if your own time is worth even $25 an hour, 8 hours a month of doing your own books is really costing you about $200 — close to what Trace charges, without anyone catching what you'd miss along the way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENTRY 006 — LANGUAGES ============ -->
+  <section class="entry entry--deep">
+    <div class="wrap">
+      <p class="entry-label"><span class="no">ENTRY NO. 006</span> <span data-i18n="lang.eyebrow">Built for how you already talk</span></p>
+      <h2 class="entry-title" data-i18n="lang.title">Text us in the language you run your business in.</h2>
+      <p style="color:var(--ink-soft);font-size:16px;max-width:560px;" data-i18n="lang.body">Philadelphia's neighborhood corridors run on English, Spanish, Chinese, and Vietnamese — often in the same block. Trace speaks all four, so nothing gets lost translating your own numbers back to you.</p>
+
+      <div class="lang-grid">
+        <div class="lang-tile"><span class="code">EN</span><span class="word">English</span></div>
+        <div class="lang-tile"><span class="code">ES</span><span class="word">Español</span></div>
+        <div class="lang-tile"><span class="code">中文</span><span class="word">Chinese</span></div>
+        <div class="lang-tile"><span class="code">VI</span><span class="word">Tiếng Việt</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENTRY 007 — BOOKING ============ -->
+  <section class="entry entry--ink" id="book">
+    <div class="wrap book-grid">
+      <div>
+        <p class="entry-label"><span class="no">ENTRY NO. 007</span> <span data-i18n="book.eyebrow">Free, no-obligation</span></p>
+        <h2 class="entry-title" data-i18n="book.title">Let's look at your books together.</h2>
+        <p style="color:rgba(243,247,241,.78);font-size:16px;max-width:420px;" data-i18n="book.sub">A 20-minute conversation, in person in Philadelphia or the surrounding counties, or over Zoom — we'll look at where your records stand today and whether Trace is a fit before anything else happens.</p>
+        <ul class="book-list">
+          <li data-i18n="book.li1">No cost, no commitment</li>
+          <li data-i18n="book.li2">Bring whatever records you already have — or none at all</li>
+          <li data-i18n="book.li3">Conducted in the language you're most comfortable in</li>
+        </ul>
+      </div>
+
+      <form class="intake-card" id="bookForm">
+        <p class="stub" data-i18n="book.formstub">Intake — Entry 007</p>
+        <div class="f-row">
+          <label for="name" data-i18n="form.name">Full name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="f-row">
+          <label for="business" data-i18n="form.business">Business name</label>
+          <input id="business" name="business" type="text" required>
+        </div>
+        <div class="f-row">
+          <label for="phone" data-i18n="form.phone">Phone / WhatsApp number</label>
+          <input id="phone" name="phone" type="tel" required>
+        </div>
+        <div class="f-row two">
+          <div>
+            <label for="format" data-i18n="form.format">Meeting type</label>
+            <select id="format" name="format">
+              <option value="zoom" data-i18n="form.zoom">Zoom</option>
+              <option value="in-person" data-i18n="form.inperson">In person</option>
+            </select>
+          </div>
+          <div>
+            <label for="language" data-i18n="form.language">Preferred language</label>
+            <select id="language" name="language">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="zh">中文</option>
+              <option value="vi">Tiếng Việt</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-row">
+          <label for="notes" data-i18n="form.notes">Anything we should know? (optional)</label>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+        </div>
+        <button type="submit" class="stamp-btn stamp-btn--block" data-i18n="form.submit">Request a time</button>
+        <p class="f-note" data-i18n="form.note">We'll text you within one business day to confirm a time.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <span class="footer-brand">TRACE DIGITAL SYSTEMS, LLC</span>
+      <span style="font-family:var(--f-mono);font-size:11.5px;color:rgba(243,247,241,.45);">FOLIO CLOSED — BALANCE CARRIED FORWARD</span>
+    </div>
+    <p class="footer-disclaimer" data-i18n="footer.disclaimer">Trace organizes and translates your financial records. We are not a CPA firm or a lender — official filings and financial decisions are always reviewed by a licensed professional.</p>
+    <p class="footer-copy">© <span id="year"></span> Trace Digital Systems LLC · Philadelphia & surrounding counties, PA</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
